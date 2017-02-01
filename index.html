@@ -11,9 +11,32 @@ for modern browsers but old browsers still pick up that your file is some kind o
     <title>muffins</title> 
 <!-- … like charset and title. -->
 <style>
+/* Hier fängt mein CSS an */
     h1 {
         color: saddlebrown;
     }
+   body{
+     background:url(img/cake102.jpg) no-repeat fixed;
+     background-size:100vw 100vh
+    }
+
+    .navi {
+      display: flex;
+      justify-content: center;
+    }
+    .navilink{
+      margin: 0 6px 
+    }
+    .navilink:hover{background-color:black }
+    
+   li 
+    {
+      list-style-type: none;    
+      }
+
+      .ac-gn-link  
+      {color:limegreen ;
+      }
 
     div {
       color: darkslategrey;
@@ -26,82 +49,102 @@ for modern browsers but old browsers still pick up that your file is some kind o
         border-style: double;
         border-color: greenyellow;
     }
-div:hover {
 
- 
-}
     body {
         font-family: Times, "Times New Roman", Georgia, serif;
     }
 
     h1 {
         font-family: Verdana, Arial, Helvetica, sans-serif;
-    }   
+    }  
+
     html {
       font-size: 15px;
     }
+
     h1 {
       font-size: 39px;
     }
     
-        .p2 {font-family:"Times New Roman", Georgia, serif;
-        }
-        .p2 {font-size :25px}
-        #main3 {
-  font-family: sans-serif;
-  background-color: #222;
-  color: #fff;
-}
+    .p2 {
+      font-family:"Times New Roman", Georgia, serif;
+      font-size :25px
+    }
+        
+    #main3 {
+      font-family: sans-serif;
+      background-color: #222;
+      color: #fff;
+    }
 
-.changeonhover {
-  background-color: #d33131;
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  border: 5px solid mediumspringgreen;
-  transition: 1s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
- }
+    .changeonhover {
+      background-color: #d33131;
+      text-align: center;
+      width: 130px;
+      height: 60px;
+      border: 15px solid lavenderblush;
+      transition: 5s width 0.2s ease-out, 2s background-color, 0.5s height 0.5s;
+    }
 
-.changeonhover:hover {
-  background-color: #222;
-  width: 400px;
-  height: 200px;
-}
-.hoverbox{
-  width:250px; 
-  height:250px;
-  background:red
-}
-.hoverbox img {
-  height:0; 
-  width:0;
-  transition: all 1s;
-}
+    .changeonhover:hover {
+      background-color: #222;
+      width: 400px;
+      height: 200px;
+    }
+    .hoverbox{
+      width:250px; 
+      height:250px;
+      background:whitesmoke
+    }
+    .hoverbox img {
+      height:0; 
+      width:0;
+      transition: all 1s;
+    }
 
-.hoverbox:hover img {
-  height:100%; 
-  width:auto;
-}
+    .hoverbox:hover img {
+      height:100%; 
+      width:auto;
+    }
   
-    
-  
-     
-   
 
-    /* CSS styling rules here. Yes, comments are different in CSS. It’s not our fault! */
+  /* Hier hört mein CSS auf */
   </style>
   </head>
-<!-- And we close our <head> element and open the <body>, where the actual content goes. -->
+  <!-- And we close our <head> element and open the <body>, where the actual content goes. -->
   <body>
+    <!-- Hier fängt mein html/body an, der content!
+     alles was hier drin steht,sehe ich auf im Browser -->
+     <ul class="navi"> 
+     <li class="navilink">
+        <a class="ac-gn-link ac-gn-link-mac" href="http://www.chefkoch.de/rs/s0g159/Kekse-Plaetzchen-Rezepte.html" data-analytics-title="keks rezepte">
+        <span class="ac-gn-link-text">Keks-Rezepte</span>
+      </a> 
+     </li >
+     <li class="navilink">
+      <a class="ac-gn-link ac-gn-link-mac" href="http://www.lecker.de/rezepte/cupcakes" data-analytics-title="cupcakes">
+					<span class="ac-gn-link-text">Cupcake-Rezepte</span>
+				</a>
+     </li>
+     <li class="navilink">
+        <a class="ac-gn-link ac-gn-link-mac" href="http://www.chefkoch.de/rs/s0/brownies/Rezepte.html" data-analytics-title="brownies">
+					<span class="ac-gn-link-text">Brownies-Rezepte</span>
+				</a>
+     </li>
+     <li class="navilink">
+        <a class="ac-gn-link ac-gn-link-mac" href="http://www.chefkoch.de/rs/s0/eistorte/Rezepte.html" data-analytics-title="eistorte">
+					<span class="ac-gn-link-text">Eistorten-Rezepte</span>
+				</a>
+     </li>
+
+     </ul>
       <a href="https://www.google.to/search?q=muffins&biw=1440&bih=755&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjYtY73v-zRAhUHPxoKHSuEBhIQ_AUIBigB" title="google">
         <img src="img/muffins.jpg" alt="placeholder image" width="678" heigth="468"/>
       </a>
       <img src="img/piece-of-cake.jpg" alt="placeholder image" width="0" heigth="0"/>
-      <div class="hoverbox">      <img src="img/piece-of-cake.jpg" alt="placeholder image" />
-
-         
-         </div>
-
+      <div class="hoverbox">      
+        <img src="img/piece-of-cake.jpg" alt="placeholder image" />
+      </div>
     </main>
     <footer>
       <h3 class="changeonhover">hover me to make cake</h3>
@@ -110,24 +153,33 @@ div:hover {
       <p><a href="">Sprinkles Cupcakes</a> is an definition of Sprinkles Cupcakes.</p>
       <p><a href="http://www.chefkoch.de/rs/s0/apfelkuchen/Rezepte.html">applecake</a> is a recepit for apple cake.</p>
       <p><a href="https://de.wikipedia.org/wiki/Cake-Pop">Cake-Pop</a> are delicios check them out here</p>
-   
+      <div id="main">
+          <h1>
+            Kuchen 
+          </h1>
+          <p>
+            Kuchen mit <em>Eis</em> 
+          </p> 
+      </div>
 
+      <div id="main2">
+        <h1>( ͡° ͜ʖ ͡°) </h1>
+        <p class="p2">Kuchen ist Bae</p>
+      </div>
+      <video width="1280" height="720" controls>
+  <source src="img/JJD-Future.mp4" type="video/mp4">
+Your browser does not support the video tag.
 
-    <div id="main">
-        <h1>Kuchen </h1>
-        <p>Kuchen mit <em>Eis</em> </p> 
-    </div>
-
-<div id="main2">
-<h1>( ͡° ͜ʖ ͡°) </h1>
-<p class="p2">XD</p>
+</video>
+    </footer>
 
 
 
 
   
 
-
-</body> </html>
+<!-- hier hört mein "content" auf -->
+</body> 
+</html>
   
 
